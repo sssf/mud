@@ -17,4 +17,8 @@ public abstract class Item {
         return this.size;
     }
 
+    public String toString() {
+        return ("name: " + this.name + " size: " + this.size);
+    }
+
 }

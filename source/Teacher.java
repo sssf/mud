@@ -10,7 +10,11 @@ public class Teacher extends Creature {
     }
 
     public void talk() {
-        String message = "Bannanas are not for monkeys!";
+        String message = "My name is " + this.name + " and I teach " + this.course.getName();
         System.out.println(name + " say: " + message);
+    }
+
+    public String toString() {
+        return "Teacher:\n  name: " + this.name + "\n  teach course: " + this.course.getName() + "\n";
     }
 }

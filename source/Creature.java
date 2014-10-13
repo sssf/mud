@@ -14,6 +14,10 @@ public abstract class Creature implements Talkable {
 
     public void talk() {
         // TODO: randomize responses
-        System.out.println(name + " don't want to talk to you");
+        System.out.println(name + " say: I don't want to talk to you");
+    }
+
+    public String toString() {
+        return "name: " + this.name;
     }
 }

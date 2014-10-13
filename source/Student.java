@@ -12,8 +12,14 @@ class Student extends Creature {
     }
 
     public void talk() {
-        String message = "Hey!";
-        System.out.println(this.name + " say:" + message);
+        String message = "Hello! My name is " + this.name + 
+                         " and I'm taking "   + this.currentCourse.getName();
+        System.out.println(this.name + " say: " + message);
+    }
+
+    public String toString() {
+        return "Student:\n  name: " + this.name + "\n  current course: " + this.currentCourse.getName() +
+                                      "\n  completed course: " + this.complededCourse.getName() + "\n";
     }
 
     // TODO: TRADE

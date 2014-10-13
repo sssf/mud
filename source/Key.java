@@ -11,4 +11,6 @@ public class Key extends Item {
         return (this.name.equals(book.getName()) && this.size == book.getSize());
     }
 
+    // uses Item toString
+
 }
