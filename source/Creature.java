@@ -1,6 +1,6 @@
 
 
-public abstract class Creature implements Talk {
+public abstract class Creature implements Talkable {
 
     protected String name;
 
