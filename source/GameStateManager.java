@@ -3,11 +3,11 @@ public class GameStateManager {
 
     public GameStateManager() {
 
-    } 
+    }
 
     public void pushState(GameState state) {
         this.stack.push(state);
-    } 
+    }
 
     public void popState() {
         this.stack.pop();
@@ -15,9 +15,9 @@ public class GameStateManager {
 
     public GameState getCurrentState() {
         return this.stack.top();
-    } 
+    }
 
     public void run() {
         this.getCurrentState().run(this);
-    } 
-} 
+    }
+}
