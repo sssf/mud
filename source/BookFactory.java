@@ -1,5 +1,5 @@
 
-import java.util.*; 
+import java.util.*;
 
 class BookFactory {
 
@@ -18,6 +18,7 @@ class BookFactory {
                 return b.copy();
             }
         }
-        return null;
+        System.out.println("[Warning]: requested book not found");
+        return new Book("Tabula rasa", 0, 0);
     }
 }

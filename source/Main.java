@@ -16,12 +16,12 @@ public class Main {
  */
 
     public static void main(String[] args) {
-        
+
         BookFactory bookFactory = new BookFactory();
 
 
         Book tempBook = bookFactory.getBook("Babak: The art of temp-programming");
-        Book mathBook = bookFactory.getBook("Algebra: The complete course");
+        Book mathBook = bookFactory.getBook("Algebra: The complete course  ");
 
         Course coding = new Course("Babak coding techniques", 30, tempBook);
         Course math   = new Course("Math", 5, mathBook);
