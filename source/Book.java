@@ -13,7 +13,6 @@ public class Book extends Item {
         this.numPages = numPages;
     }
 
-
     public String getTitle() {
         return this.name;
     }
@@ -24,6 +23,14 @@ public class Book extends Item {
         } else {
             return false;
         }
+    }
+
+    public void read(Creature c) {
+        System.out.println(c.getName() + " reads " + this.name);
+    }
+
+    public Book copy() {
+        return new Book(this.name, this.size, this.numPages);
     }
 
     public String toString() {
